@@ -1,0 +1,88 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+.container {
+    height: 100%;
+    grid-area: container;
+    display: grid;
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas:
+                                "header"
+                                "main"
+                                "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #4bd1f1;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    grid-area: welcome;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #b6b0b070;
+    padding: 50px 0px;
+}
+
+.img {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 25px;
+}
+
+.sign-in input {
+    background: #80808033;
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#sign-in-btn{
+    color: white;
+    background-color: #208ccd;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.sign-in-div{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #4bd1f1;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}

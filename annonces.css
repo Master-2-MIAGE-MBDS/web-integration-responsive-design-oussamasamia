@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    grid-area: container;
+    display: grid;
+    grid-template-rows: 60px auto 40px;
+    grid-template-areas:
+                                "header"
+                                "main"
+                                "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #4bd1f1;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header-nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 10px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #8080809e;
+    padding: 3px;
+}
+
+.ads-details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.ads-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.ads-details-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background: #80808014;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #4bd1f1;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (min-width:1025px){
+    .main{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+    }
+    .ads-container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+        margin: 10px;
+        /* background: white; */
+        border-radius: 6px;
+        box-shadow: 3px 3px 10px 0px #564bf15c;
+        border: 1px solid #8080803b;
+    }
+    .ads-details div h3{
+        text-align: center;
+        color: #564bf1;
+    }
+    .header {
+        color: #88F4FF;
+        background-color: #7338AC;
+    }
+    .footer{
+        color: #219BE4;
+        background-color: #7338AC;
+    }
+    /*
+    7338AC
+    635AD9
+    219BE4
+    88F4FF
+    */
+    /*
+    557C83
+    3AADA8
+    A2D5AC
+    E5EEC1
+    */
+}
